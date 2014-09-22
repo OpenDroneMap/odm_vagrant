@@ -12,11 +12,17 @@ Install Vagrant ( http://vagrantup.com )
 
 (For Windows and Mac) Install Github ( http://windows.github.com or http://mac.github.com )
 
-Launch shell.
+Copy everything out of the 'user' directory to your user directory ( e.g. c:\users\robertherman\ )
 
-Navigate to vagrant directory.
+Copy OpenDroneMap to c:\users\<yourusername>\Documents\OpenDroneMap
 
+Make a directory c:\users\yourusername\Documents\OpenDroneMap\vagrant_data
+
+Launch GitHub Command Line
+
+Navigate to vagrant directory.:
 ```
+cd c:\users\yourusername\Documents\OpenDroneMap\
 vagrant up
 vagrant ssh
 ```
