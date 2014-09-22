@@ -13,8 +13,10 @@ Install Vagrant ( http://vagrantup.com )
 (For Windows and Mac) Install Github ( http://windows.github.com or http://mac.github.com )
 
 Copy everything out of the 'user' directory to your user directory ( e.g. c:\users\robertherman\ )
-
-Copy OpenDroneMap to c:\users\<yourusername>\Documents\OpenDroneMap
+  * This includes 
+      1. 'VirtualBox VMs'
+      2. .vagrant.d
+      3. .VirtualBox
 
 Make a directory c:\users\yourusername\Documents\OpenDroneMap\vagrant_data
 
@@ -28,3 +30,5 @@ vagrant ssh
 ```
 
 You're in!
+
+Copy OpenDroneMap to c:\users\<yourusername>\Documents\OpenDroneMap
