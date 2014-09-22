@@ -18,11 +18,11 @@ How to use
 6. Copy OpenDroneMap to c:\users\yourusername\Documents\OpenDroneMap
 7. Copy 'odm_vagrant' to c:\users\yourusername\Documents\odm\
 8. Launch GitHub Command Line
- a. Navigate to vagrant directory.:
+ * Navigate to vagrant directory.:
  ```
  cd c:\users\yourusername\Documents\OpenDroneMap\
  ```
- b. Type the following in the 
+ * Type the following in the 
   ```
   vagrant up
   vagrant ssh
