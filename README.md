@@ -19,7 +19,6 @@ Navigate to vagrant directory.
 ```
 vagrant up
 vagrant ssh
-
 ```
 
 You're in!
