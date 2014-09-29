@@ -73,4 +73,4 @@ From Meshlab 1.3.3:
 	* Texture the mesh
 		* Parameterization + texturing from registered rasters
 
-Celebrate.
+Celebrate. Now try your own dataset. If you don't have one, saunter over to http://www.publiclab.org/ for DIY balloon advice.
