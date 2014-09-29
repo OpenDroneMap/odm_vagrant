@@ -73,4 +73,4 @@ From Meshlab 1.3.3:
 	* Texture the mesh
 		* Parameterization + texturing from registered rasters
 
-Celebrate. Now try your own dataset. If you don't have one, saunter over to http://www.publiclab.org/ for DIY balloon advice.
+Celebrate. Now try your own dataset. If you don't have one, saunter over to http://www.publiclab.org/ for DIY balloon advice, or get yourself a nifty quad copter with a commodity camera (preferably not a GoPro for now until we have a routine to calibrate those). Aim for 70-80% overlap between your photos.
