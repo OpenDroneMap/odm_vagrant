@@ -44,7 +44,7 @@ Wait patiently...
 Now let us run OpenDroneMap on our test dataset.
 
 ```
-cd /vagrant_data/odm_data
+cd /vagrant_data/odm_data/odm_data/
 /vagrant_data/OpenDroneMap/./run.pl
 ```
 
