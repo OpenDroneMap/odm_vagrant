@@ -10,11 +10,12 @@ How to use
 2. Install Vagrant ( http://vagrantup.com )
 3. (For Windows and Mac) Install Github ( http://windows.github.com or http://mac.github.com )
 4. Make a directory c:\users\yourusername\Documents\odm\vagrant_data
-5. Copy OpenDroneMap into c:\users\yourusername\Documents\odm\vagrant_data\
+5. Clone or download zip of https://github.com/OpenDroneMap/OpenDroneMap.git and unzip.
+6. Copy OpenDroneMap into c:\users\yourusername\Documents\odm\vagrant_data\
    * This will put OpenDroneMap into a directory shared by the host and virtual machine
-6. Copy directory of photos (e.g. PacificaPhotos) you want to process to c:\users\yourusername\Documents\odm\vagrant_data\
-7. Copy 'odm_vagrant' to c:\users\yourusername\Documents\odm\
-8. Launch GitHub Command Line
+7. Copy directory of photos (e.g. PacificaPhotos) you want to process to c:\users\yourusername\Documents\odm\vagrant_data\
+8. Copy 'odm_vagrant' to c:\users\yourusername\Documents\odm\
+9. Launch GitHub Command Line
  * Navigate to vagrant directory.:
  ```
  cd c:\users\yourusername\Documents\OpenDroneMap\
