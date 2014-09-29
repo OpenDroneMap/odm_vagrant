@@ -61,12 +61,12 @@ Install MeshLab 1.3.3 or later on your Windows host. Then...
 From Meshlab 1.3.3:
 
 	* Open Project file, navigate to:
-		* <project_location>/reconstruction-with-image-size-1200/bundle/bundle.out
+		* c:\users\yourusername\Documents\odm\vagrant_data\odm_data\reconstruction-with-image-size-1200\reconstruction-with-image-size-1200\bundle\bundle.out
 	* It will prompt for the image list file
-		* <project_location>/reconstruction-with-image-size-1200/list.txt
+		* c:\users\yourusername\Documents\odm\vagrant_data\odm_data\reconstruction-with-image-size-1200\reconstruction-with-image-size-1200\list.txt
 	* Control-L and delete "0 model"
 	* Import dense point cloud:
-		* e.g. <project_location>/reconstruction-with-image-size-1200-results/option-0000.ply
+		* e.g. c:\users\yourusername\Documents\odm\vagrant_data\odm_data\reconstruction-with-image-size-1200\reconstruction-with-image-size-1200-results\option-0000.ply
 		* (there may be multiple ply files)
 	* Make a mesh:
 		* Filters:Remeshing, Simplification and Reconstruction:Surface Reconstruction Poisson
