@@ -20,6 +20,7 @@ How to use
  * Type the following in the command line
 
   ```
+  mkdir ..\vodm_data
   vagrant up
   vagrant ssh
   ```
