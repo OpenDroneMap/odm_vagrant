@@ -7,7 +7,7 @@ VAGRANTFILE_API_VERSION = "2"
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # Every Vagrant virtual environment requires a box to build from.
-  config.vm.box = "hashicorp/precise32"
+  config.vm.box = "ubuntu/trusty64"
 
   config.vm.synced_folder "../vodm_data", "/vagrant_data"
 
@@ -17,9 +17,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   #
    config.vm.provider "virtualbox" do |vb|
      vb.customize ["modifyvm", :id, "--memory", "4096"]
+	 vb.cpus = 2
      vb.customize ["modifyvm", :id, "--usb", "on"]
    end
-
-
-
 end
