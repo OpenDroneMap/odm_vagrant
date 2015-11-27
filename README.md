@@ -53,7 +53,7 @@ Wait patiently, on a typical desktop machine ODM App installation will take abou
 
   ```
   cd /vagrant_data/odm_data/pacifica/
-  /odm_app/OpenDroneMap/run.pl
+  /odm_app/OpenDroneMap/run.py
   ```
 Wait patiently again, this will take about the same amount of time as the install proceedure.<br>
 Outputs will be in:<br>
