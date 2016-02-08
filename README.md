@@ -29,7 +29,7 @@ You have now installed, launched and logged in to an Ubuntu GNU/Linux OS on your
   ```
   sudo apt-get -y install git
   cd /vagrant_data/
-  git clone https://github.com/OpenDroneMap/odm_data.git
+  git clone --recursive https://github.com/OpenDroneMap/odm_data.git
   ```
 
 10. Clone the OpenDroneMap application repository  https://github.com/OpenDroneMap/OpenDroneMap.git
