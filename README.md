@@ -24,12 +24,12 @@ How to Install and Test
 In Windows you will have the vodm_data directory you just created, in the GNU/Linux environment used below, that directory will be called vagrant_data, they are the same directory<br><br>
 You have now installed, launched and logged in to an Ubuntu GNU/Linux OS on your Windows machine. The following commands are all standard Ubuntu GNU/Linux commands.
 
-9. Clone the sample imagery repository https://github.com/OpenDroneMap/odm_data.git
+9. If you don't have your own data, clone some sample imagery from our repository https://github.com/OpenDroneMap/odm_data.git. This could take a while, so it might be better so pick and choose. 
 
   ```
   sudo apt-get -y install git
   cd /vagrant_data/
-  git clone --recursive https://github.com/OpenDroneMap/odm_data.git
+  git clone https://github.com/OpenDroneMap/odm_data_bellus.git
   ```
 
 10. Clone the OpenDroneMap application repository  https://github.com/OpenDroneMap/OpenDroneMap.git
@@ -45,29 +45,32 @@ You have now installed, launched and logged in to an Ubuntu GNU/Linux OS on your
 
   ```
   cd /odm_app/OpenDroneMap/
-  ./install.sh
+  bash configure.sh
+  mkdir build && cd build && cmake .. && make && cd ..
   ```
 Wait patiently, on a typical desktop machine ODM App installation will take about 20 minutes.
 
-12. Run the OpenDroneMap App on the an odm_data test dataset.
+12. (optional) With your favorite editor, add the following to your `~/.bashrc` file:
+```
+export PYTHONPATH=$PYTHONPATH:/odm_app/OpenDroneMap/SuperBuild/install/lib/python2.7/dist-packages:/odm_app/OpenDroneMap/SuperBuild/src/opensfm
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/odm_app/OpenDroneMap/SuperBuild/install/lib
+```
+You'll need to logout and back in again if you do this.
 
+13. Run the OpenDroneMap App on an odm_data test dataset (or your own).
   ```
-  cd /vagrant_data/odm_data/pacifica/
-  /odm_app/OpenDroneMap/run.py
+  ./run.sh --project-path /vagrant-data/odm_data_bellus/
   ```
-Wait patiently again, this will take about the same amount of time as the install proceedure.<br>
+Wait patiently again, this will take some time.<br>
 Outputs will be in:<br>
-/vagrant_data/odm_data/pacifica/reconstruction-with-image-size-1200<br>
-and<br>
-/vagrant_data/odm_data/pacifica/reconstruction-with-image-size-1200-results<br>
-In your Windows host, these will be at c:\users\yourusername\Documents\odm\vodm_data\odm_data\pacifica\
+/vagrant_data/odm_data_bellus/<br>
+In your Windows host, these will be at c:\users\yourusername\Documents\odm\vodm_data\odm_data_bellus
 
-13. If you are done processing imagery datasets, you can logout and shutdown the virutal machine.
-
+14. If you are done processing imagery datasets, you can logout and shutdown the virutal machine.
   ```
   sudo shutdown now
   ```
-To enter the ODM environment again, repeat steps 7, 8 (but don't make the vodm_data directory a second time) Step 12 is all you need to do to run the software on another imagery dataset.
+To enter the ODM environment again, repeat steps 7, 8 (but don't make the vodm_data directory a second time) Step 13 is all you need to do to run the software on another imagery dataset.
 
 ---
 
@@ -75,17 +78,14 @@ Install MeshLab 1.3.3 or later on your Windows host. Then...
 
 From Meshlab 1.3.3:
 
-	* Open Project file, navigate to:
-		* c:\users\yourusername\Documents\odm\vodm_data\odm_data\pacifica\reconstruction-with-image-size-1200\bundle\bundle.out
-	* It will prompt for the image list file
-		* c:\users\yourusername\Documents\odm\vodm_data\odm_data\pacifica\reconstruction-with-image-size-1200\list.txt
-	* Control-L and delete "0 model"
 	* Import dense point cloud:
-		* e.g. c:\users\yourusername\Documents\odm\vodm_data\odm_data\pacifica\reconstruction-with-image-size-1200-results\option-0000.ply
-		* (there may be multiple ply files)
-	* Make a mesh:
-		* Filters:Remeshing, Simplification and Reconstruction:Surface Reconstruction Poisson
-	* Texture the mesh
-		* Parameterization + texturing from registered rasters
+		* e.g. c:\users\yourusername\Documents\odm\vodm_data\odm_data_bellus\pmvs\recon0\models\option-0000.ply
+		* (there may be multiple reconX folders)
+	* Mesh: 
+		* c:\users\yourusername\Documents\odm\vodm_data\odm_data_bellus\odm_meshing\odm_mesh.ply
+	* Textured Mesh:
+		* c:\users\yourusername\Documents\odm\vodm_data\odm_data_bellus\odm_texturing\odm_textured_model.obj
+	* Orthophoto:
+		* c:\users\yourusername\Documents\odm\vodm_data\odm_data_bellus\odm_orthophoto\odm_orthophoto.tif
 
 Celebrate. Now try your own dataset. If you don't have one, saunter over to http://www.publiclab.org/ for DIY balloon advice, or get yourself a nifty quad copter with a commodity camera (preferably not a GoPro for now until we have a routine to calibrate those). Aim for 70-80% overlap between your photos.
