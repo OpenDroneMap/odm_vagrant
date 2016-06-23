@@ -51,13 +51,15 @@ You have now installed, launched and logged in to an Ubuntu GNU/Linux OS on your
 Wait patiently, on a typical desktop machine ODM App installation will take about 20 minutes.
 
 12. (optional) With your favorite editor, add the following to your `~/.bashrc` file:
-```
-export PYTHONPATH=$PYTHONPATH:/odm_app/OpenDroneMap/SuperBuild/install/lib/python2.7/dist-packages:/odm_app/OpenDroneMap/SuperBuild/src/opensfm
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/odm_app/OpenDroneMap/SuperBuild/install/lib
-```
+
+  ```
+  export PYTHONPATH=$PYTHONPATH:/odm_app/OpenDroneMap/SuperBuild/install/lib/python2.7/dist-packages:/odm_app/OpenDroneMap/SuperBuild/src/opensfm
+  export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/odm_app/OpenDroneMap/SuperBuild/install/lib
+  ```
 You'll need to logout and back in again if you do this.
 
 13. Run the OpenDroneMap App on an odm_data test dataset (or your own).
+
   ```
   ./run.sh --project-path /vagrant-data/odm_data_bellus/
   ```
@@ -67,9 +69,10 @@ Outputs will be in:<br>
 In your Windows host, these will be at c:\users\yourusername\Documents\odm\vodm_data\odm_data_bellus
 
 14. If you are done processing imagery datasets, you can logout and shutdown the virutal machine.
-  ```
-  sudo shutdown now
-  ```
+
+```
+sudo shutdown now
+```
 To enter the ODM environment again, repeat steps 7, 8 (but don't make the vodm_data directory a second time) Step 13 is all you need to do to run the software on another imagery dataset.
 
 ---
