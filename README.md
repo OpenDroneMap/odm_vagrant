@@ -61,7 +61,7 @@ You'll need to logout and back in again if you do this.
 13. Run the OpenDroneMap App on an odm_data test dataset (or your own).
 
   ```
-  ./run.sh --project-path /vagrant-data/odm_data_bellus/
+  ./run.sh --project-path /vagrant_data/odm_data_bellus/
   ```
 Wait patiently again, this will take some time.<br>
 Outputs will be in:<br>
