@@ -8,7 +8,7 @@ How to Install and Test
 
 1. Install VirtualBox ( http://virtualbox.org )
 2. Install Vagrant ( http://vagrantup.com )
-3. Install Github for Windows or Mac OS ( http://windows.github.com or http://mac.github.com )
+3. Install Github for Windows or Mac OS ( https://desktop.github.com/ )
 4. Clone the odm_vagrant repository ( https://github.com/OpenDroneMap/odm_vagrant ) to your local machine.
 5. Make a main install directory for the OpenDroneMap installation c:\users\yourusername\Documents\odm\
 6. Copy your cloned 'odm_vagrant' directory to c:\users\yourusername\Documents\odm\
@@ -21,7 +21,7 @@ How to Install and Test
   vagrant up
   vagrant ssh
   ```
-In Windows you will have the vodm_data directory you just created, in the GNU/Linux environment used below, that directory will be called vagrant_data, they are the same directory<br><br>
+In Windows, you will have the vodm_data directory you just created, in the GNU/Linux environment used below, that directory will be called vagrant_data, they are the same directory<br><br>
 You have now installed, launched and logged in to an Ubuntu GNU/Linux OS on your Windows machine. The following commands are all standard Ubuntu GNU/Linux commands.
 
 9. If you don't have your own data, clone some sample imagery from our repository https://github.com/OpenDroneMap/odm_data.git. This could take a while, so it might be better so pick and choose. 
