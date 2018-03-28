@@ -1,6 +1,8 @@
 odm_vagrant
 ===========
 
+**Please refer to https://docs.opendronemap.org for instructions on how to install ODM. Vagrant is no longer supported**
+
 Vagrant machine for using OpenDroneMap, meant primarily for Windows users who want to leverage ODM.
 
 How to Install and Test
